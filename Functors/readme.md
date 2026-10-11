@@ -1,0 +1,1 @@
+Function ka object ko functor kayta hai

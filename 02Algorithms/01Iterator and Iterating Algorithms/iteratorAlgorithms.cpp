@@ -56,7 +56,7 @@ int main(){
 
 
 
-    // cout<<"Before Shifting"<<endl;                                         //rotate (+3 position)
+    // cout<<"Before Shifting"<<endl;                                         //rotate algo(+3 position)
     // for(int i:arr){
     //     cout<<i<<" ";
     // }
@@ -76,10 +76,17 @@ int main(){
     arr[3]=22;
     arr[4]=12;
 
-    auto it=unique(arr.begin(),arr.end());                                            //unique
-    // it iterator k pahle saare unique element hai
-    // it k baad saare duplicate element hai
-    arr.erase(it,arr.end());
+    // auto it=unique(arr.begin(),arr.end());                                       //unique algo
+    // // it iterator k pahle saare unique element hai
+    // // it k baad saare duplicate element hai
+    // arr.erase(it,arr.end());
+    // for(int i:arr){
+    //     cout<<i<<" ";
+    // }
+
+
+
+    auto it=partition(arr.begin(),arr.end(),checkEven);                           //partition algo
     for(int i:arr){
         cout<<i<<" ";
     }
